@@ -1,0 +1,20 @@
+kind: role
+metadata:
+  description: Example approval request automation role
+  name: example-requests
+spec:
+  allow:
+    review_requests:
+      roles:
+      - '*'
+    rules:
+    - resources:
+      - access_request
+      verbs:
+      - create
+    - resources:
+      - user
+      verbs:
+      - list
+      - read
+version: v5

@@ -1,0 +1,7 @@
+kind: user
+metadata:
+  name: example-request
+spec:
+  roles:
+  - example-requests
+version: v2
